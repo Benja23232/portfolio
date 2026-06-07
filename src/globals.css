@@ -1,0 +1,74 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px; /* Evita que el navbar tape los títulos al hacer clic en el menú */
+}
+
+/* Nota: Eliminamos las reglas de "body" de acá porque el color de fondo y 
+  de texto los pasamos a manejar con Tailwind en layout.tsx 
+  (ej: bg-zinc-50 dark:bg-[#050505]).
+*/
+
+/* =========================================
+   CUADRÍCULA TÉCNICA (GRID)
+   ========================================= */
+
+/* Fondo modo claro (líneas oscuras sutiles) */
+.bg-grid-pattern {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.04) 1px, transparent 1px),
+                    linear-gradient(90deg, rgba(0, 0, 0, 0.04) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* Fondo modo oscuro (líneas blancas sutiles) */
+.dark .bg-grid-pattern {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+                    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+}
+
+/* =========================================
+   SCROLLBAR ESTILO INDUSTRIAL
+   ========================================= */
+
+/* Base y Modo Claro */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background-color: #f4f4f5; /* zinc-100 */
+}
+::-webkit-scrollbar-thumb {
+  background-color: #d4d4d8; /* zinc-300 */
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #0ea5e9; /* sky-500 */
+}
+
+/* Modo Oscuro */
+.dark ::-webkit-scrollbar-track {
+  background-color: #050505;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background-color: #3f3f46; /* zinc-700 */
+}
+.dark ::-webkit-scrollbar-thumb:hover {
+  background-color: #0ea5e9; /* sky-500 */
+}
+
+/* =========================================
+   EMBLA CAROUSEL
+   ========================================= */
+
+/* Clases obligatorias para que el carrusel Embla funcione */
+.embla {
+  overflow: hidden;
+  width: 100%;
+}
+.embla__container {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
