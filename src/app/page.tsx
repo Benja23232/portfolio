@@ -46,15 +46,35 @@ export default function Home() {
           {/* SECCIÓN TECNOLOGÍAS */}
           <TechStack />
 
-          {/* SECCIÓN PROYECTOS */}
-          <section id="proyectos" className="pt-24 pb-20">
+          {/* =========================================
+              SECCIÓN 1: PROYECTOS WEB (Escritorio)
+              ========================================= */}
+          <section id="proyectos" className="pt-24 pb-10">
             <div className="mb-10">
-              <h2 className="text-sm text-zinc-500 dark:text-zinc-400 uppercase tracking-widest font-semibold mb-2">Portfolio Técnico</h2>
+              <h2 className="text-sm text-zinc-500 dark:text-zinc-400 uppercase tracking-widest font-semibold mb-2">Proyectos Web</h2>
               <div className="w-12 h-1 bg-sky-500"></div>
             </div>
 
+            {/* Mostramos 2 por fila para que luzcan horizontales e imponentes */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              {projects.filter((p) => !p.isMobile).map((project) => (
+                <ProjectCard key={project.id} project={project} />
+              ))}
+            </div>
+          </section>
+
+          {/* =========================================
+              SECCIÓN 2: PROYECTOS MÓVILES
+              ========================================= */}
+          <section id="proyectos-moviles" className="pt-10 pb-20">
+            <div className="mb-10">
+              <h2 className="text-sm text-zinc-500 dark:text-zinc-400 uppercase tracking-widest font-semibold mb-2">Desarrollo Móvil / Web Apps</h2>
+              <div className="w-12 h-1 bg-sky-500"></div>
+            </div>
+
+            {/* Mostramos 3 por fila para que las tarjetas verticales queden del tamaño ideal */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {projects.map((project) => (
+              {projects.filter((p) => p.isMobile).map((project) => (
                 <ProjectCard key={project.id} project={project} />
               ))}
             </div>

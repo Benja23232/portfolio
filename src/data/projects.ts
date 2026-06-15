@@ -5,6 +5,7 @@ export interface Project {
   description: string;
   techStack: string[];
   images: string[];
+  isMobile:boolean;
   githubLink: string;
 }
 
@@ -21,6 +22,7 @@ export const projects: Project[] = [
       "/images/eventos/eventoslista.png",
       "/images/eventos/inscripcion.png"
     ],
+     isMobile:false,
     githubLink: "https://github.com/Benja23232/diospro"
   },
   {
@@ -35,20 +37,21 @@ export const projects: Project[] = [
       "/images/acreditacion/crearevento.png",
       "/images/acreditacion/reporte.png"
     ],
+    isMobile:false,
     githubLink: "https://github.com/Benja23232/Sistema-acreditacion-eventos"
   },
   {
     id: 3,
     title: "Sistema Colaborativo de Gestión de Compras",
     description: "Aplicación web colaborativa diseñada para llevar un control transparente y exacto de los gastos compartidos. Permite registrar compras y calcula automáticamente los saldos y deudas entre todos los integrantes del grupo.",
-    techStack: ["PHP 8.2", "Symfony 6.4", "MySQL / MariaDB", "Doctrine ORM", "Twig", "JavaScript", "CSS"],
+    techStack: ["Next.js", "React", "Tailwind CSS", "Supabase", "PostgreSQL"],
     images: [
-      "/images/compras/panel.png",
-      "/images/compras/deudas.png",
-      "/images/compras/registrarcompra.png",
-      "/images/compras/registrarpago.png",
-      "/images/compras/historialcompras.png"
+      "/images/deudahermanos/panel.png",
+      "/images/deudahermanos/login.png",
+      "/images/deudahermanos/compra.png",
+      "/images/deudahermanos/ticket.png"
     ],
+    isMobile: true,
     githubLink: "https://github.com/Benja23232/gestionDeCompras"
   }
 ];
