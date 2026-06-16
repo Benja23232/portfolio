@@ -53,5 +53,21 @@ export const projects: Project[] = [
     ],
     isMobile: true,
     githubLink: "https://github.com/Benja23232/gestionDeCompras"
+  },
+  {
+    id: 4,
+    title: "GymControl - Plataforma SaaS de Gestión Deportiva",
+    description: "Sistema full-stack orientado a la administración de gimnasios y clubes. Automatiza el control financiero de cuotas y membresías, y cuenta con un motor dinámico para el diseño de planes de entrenamiento divididos, integrando el envío automático de las rutinas por correo electrónico. Diseñado bajo principios de interfaz brutalista para máxima eficiencia operativa.",
+    techStack: ["Next.js (App Router)", "Prisma ORM", "PostgreSQL (Supabase)", "Tailwind CSS", "Nodemailer", "Server Actions"],
+    images: [
+      "/images/gimnasio/panel.png",
+      "/images/gimnasio/alumnos.png",
+      "/images/gimnasio/alumno.png", 
+      "/images/gimnasio/rutina.png",
+      "/images/gimnasio/crear-rutina.png" ,
+      "/images/gimnasio/detalle-rutina.png" 
+    ],
+    isMobile: false,
+    githubLink: "https://github.com/Benja23232/gym-control" 
   }
 ];
