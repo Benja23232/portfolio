@@ -69,5 +69,28 @@ export const projects: Project[] = [
     ],
     isMobile: false,
     githubLink: "https://github.com/Benja23232/gym-control" 
+  },
+  {
+    id: 5,
+    title: "Supercompra - E-commerce Omnicanal & Logística",
+    description: "Plataforma integral de comercio electrónico que automatiza el ciclo completo de ventas. Integra un bot de WhatsApp (Meta API) para atención al cliente y toma de pedidos, validación de comprobantes de pago mediante Inteligencia Artificial (OCR) y facturación automática. Cuenta con un panel de administración con roles de usuario para gestionar catálogo, control de stock por lotes, armado de pedidos (picking) y un módulo de reparto con seguimiento GPS en tiempo real.",
+    techStack: ["Next.js", "Node.js", "Supabase (PostgreSQL / Realtime)", "Meta WhatsApp API", "Tesseract.js (IA/OCR)", "Tailwind CSS", "PDFKit"],
+    images: [
+      "/images/supermercado/whatsapp/f2.png",
+      "/images/supermercado/whatsapp/f1.png",
+      "/images/supermercado/whatsapp/f3.png",
+      "/images/supermercado/whatsapp/f4.png",
+       "/images/supermercado/whatsapp/f6.png",
+      "/images/supermercado/login.png",
+      "/images/supermercado/panel.png",
+      "/images/supermercado/pedidos.png",
+      "/images/supermercado/armado.png",
+      "/images/supermercado/productos.png",
+      "/images/supermercado/re.png",
+      "/images/supermercado/auditorias.png"
+
+    ],
+    isMobile: false,
+    githubLink: "https://github.com/Benja23232/supercompra"
   }
 ];

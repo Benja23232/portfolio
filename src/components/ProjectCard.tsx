@@ -57,7 +57,7 @@ export default function ProjectCard({ project }: { project: any }) {
 
       <div className="p-6 flex flex-col flex-grow">
         <h3 className="text-xl font-semibold text-white mb-2">{project.title}</h3>
-        <p className="text-zinc-400 text-sm mb-6 line-clamp-3 flex-grow leading-relaxed font-light">{project.description}</p>
+        <p className="text-zinc-400 text-sm mb-6  flex-grow leading-relaxed font-light">{project.description}</p>
         
         <div className="flex flex-wrap gap-2 mb-6">
           {project.techStack.map((tech: string, i: number) => (
