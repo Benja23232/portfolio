@@ -92,5 +92,37 @@ export const projects: Project[] = [
     ],
     isMobile: false,
     githubLink: "https://github.com/Benja23232/supercompra"
+  },
+  {
+    id: 6,
+    title: "Eventify - Plataforma de Gestión de Eventos y Participantes",
+    description: "Plataforma web moderna y responsiva diseñada para la administración centralizada de eventos. Cuenta con un sistema de autenticación por roles (Super Admin / Admin Local), formularios dinámicos con renderizado condicional para la captura de datos médicos, e inscripciones ultra rápidas. Integra conversión de imágenes a Base64 para almacenamiento en entornos serverless (Vercel) y envío automatizado de correos electrónicos con códigos QR de acceso.",
+    techStack: ["Next.js (App Router)", "TypeScript", "Tailwind CSS", "Prisma ORM", "TiDB (MySQL)", "Bcryptjs", "Server Actions"],
+    images: [
+      "/images/eventify/login.png",
+      "/images/eventify/panel.png",
+      "/images/eventify/nuevo-evento.png",
+      "/images/eventify/busqueda.png",
+      "/images/eventify/ins1.png",
+      "/images/eventify/ins2.png",
+      "/images/eventify/detalle.png",
+      
+
+    ],
+    isMobile: false, // O true si querés destacar que la hiciste 100% responsiva para celulares
+    githubLink: "https://github.com/Benja23232/eventify-sistema"
+  },{
+    id: 7,
+    title: "BarberStudio - Sistema de Gestión y Reservas de Turnos",
+    description: "Plataforma full-stack moderna orientada a negocios de servicios y estética. Cuenta con una interfaz pública de reservas en modo oscuro con calendario interactivo y selección de horarios. Incluye un panel de administración privado y ultra responsivo con filtrado por pestañas en tiempo real (Pendientes, Completados, Cancelados), control operativo de citas y generación automática de enlaces profundos para disparar recordatorios instantáneos por WhatsApp.",
+    techStack: ["Next.js (App Router)", "TypeScript", "Prisma ORM", "Supabase", "PostgreSQL", "Tailwind CSS", "Date-fns"],
+    images: [
+      "/images/barberia/cel.jpeg",
+      "/images/barberia/f1cel.jpeg",
+      "/images/barberia/f2cel.jpeg",
+      "/images/barberia/foto5.png",
+    ],
+    isMobile: true,
+    githubLink: "https://github.com/Benja23232/barberia-turnos"
   }
 ];
